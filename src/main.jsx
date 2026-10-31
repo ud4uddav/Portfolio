@@ -18,7 +18,6 @@ const socials = { github: 'https://github.com/ud4uddav', linkedin: 'https://link
 function App() {
   return <>
     <header className="top wrap">
-      <a className="brand" href="#home" aria-label="Uddhav Dhakal home">UD<b>.</b></a>
       <nav aria-label="Main navigation"><a href="#about">About</a><a href="#projects">Projects</a><a href="#education">Education</a></nav>
       <a className="nav-contact" href="#contact">Let’s talk <span aria-hidden="true">↗</span></a>
     </header>
@@ -32,7 +31,6 @@ function App() {
           <div className="actions"><a className="button" href="#projects">Explore my work <span className="arrow" aria-hidden="true">→</span></a><a className="text-link" href="#contact">Get in touch <span aria-hidden="true">↗</span></a></div>
           <div className="social"><a href={socials.github} target="_blank" rel="noreferrer">GitHub ↗</a><a href={socials.linkedin} target="_blank" rel="noreferrer">LinkedIn ↗</a></div>
         </div>
-        <div className="portrait" role="img" aria-label="Uddhav Dhakal monogram graphic"><span className="portrait-mark">FINLAND · 2026</span><span className="initials" aria-hidden="true">UD</span><span className="portrait-note">BUILDING WITH CURIOSITY</span></div>
       </section>
 
       <section className="section wrap section-grid" id="about">
@@ -57,7 +55,6 @@ function App() {
 
       <section className="contact" id="contact"><div className="wrap contact-inner"><p className="section-label">05 — CONTACT</p><h2>Let’s make<br /><span>something work.</span></h2><p className="contact-copy">I’m exploring junior software developer, backend developer, and trainee roles in Finland. I’d be happy to connect and talk about how I could contribute to your team.</p><div className="contact-links"><a className="button" href={socials.linkedin} target="_blank" rel="noreferrer">Connect on LinkedIn ↗</a><a href={socials.github} target="_blank" rel="noreferrer">GitHub ↗</a></div></div></section>
     </main>
-    <footer className="wrap footer"><a className="brand" href="#home">UD<b>.</b></a><small>© {new Date().getFullYear()} Uddhav Dhakal · Made in Finland</small><a href={socials.github} target="_blank" rel="noreferrer">GitHub ↗</a></footer>
   </>
 }
 
