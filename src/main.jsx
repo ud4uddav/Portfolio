@@ -37,31 +37,31 @@ function App() {
       </section>
 
       <section className="section wrap section-grid" id="about">
-        <div><p className="section-label">01 — ABOUT</p><h2 className="section-title">A practical<br />problem solver.</h2></div>
+        <div><p className="section-label">ABOUT</p><h2 className="section-title">A practical<br />problem solver.</h2></div>
         <div className="about-copy"><p className="lead">I recently completed a Bachelor of Engineering in Information Technology at Centria University of Applied Sciences in Finland.</p><p>My projects span React interfaces, REST APIs, cloud deployments, relational and document databases, and connected hardware. I enjoy understanding how the pieces fit together and building software that is useful and maintainable.</p><p>Before engineering, I earned a Bachelor of Business Administration. Since 2018, I’ve also worked as a shift leader, coordinating daily operations and a multicultural team—experience that has strengthened my communication and problem-solving.</p></div>
       </section>
 
       <section className="section wrap section-grid" id="skills">
-        <div><p className="section-label">02 — TOOLKIT</p><h2 className="section-title">Things I’ve<br />worked with.</h2></div>
+        <div><p className="section-label">TOOLKIT</p><h2 className="section-title">Things I’ve<br />worked with.</h2></div>
         <div className="skills">{skills.map(([group, items]) => <div className="skill" key={group}><h3>{group}</h3><p>{items}</p></div>)}</div>
       </section>
 
       <section className="section wrap" id="projects">
-        <div className="section-grid"><div><p className="section-label">03 — SELECTED WORK</p><h2 className="section-title">Built to be<br />useful.</h2></div><p className="section-intro">A few projects that helped me explore product development across the stack.</p></div>
-        <div className="projects">{projects.map((project, index) => <article className="project" key={project.name}><span className="project-no">0{index + 1}</span><div className="project-main"><p className="project-type">{project.type}</p><h3>{project.name} <a className="project-link" href={project.url} target="_blank" rel="noreferrer" aria-label={`View ${project.name} on GitHub`}>↗</a></h3><p className="project-desc">{project.description}</p><div className="tags">{project.stack.map(tech => <span key={tech}>{tech}</span>)}</div></div></article>)}</div>
+        <div className="section-grid"><div><p className="section-label">SELECTED WORK</p><h2 className="section-title">Built to be<br />useful.</h2></div><p className="section-intro">A few projects that helped me explore product development across the stack.</p></div>
+        <div className="projects">{projects.map(project => <article className="project" key={project.name}><div className="project-main"><p className="project-type">{project.type}</p><h3>{project.name} <a className="project-link" href={project.url} target="_blank" rel="noreferrer" aria-label={`View ${project.name} on GitHub`}>↗</a></h3><p className="project-desc">{project.description}</p><div className="tags">{project.stack.map(tech => <span key={tech}>{tech}</span>)}</div></div></article>)}</div>
       </section>
 
       <section className="section wrap section-grid" id="education">
-        <div><p className="section-label">04 — EDUCATION</p><h2 className="section-title">The foundation.</h2></div>
+        <div><p className="section-label">EDUCATION</p><h2 className="section-title">The foundation.</h2></div>
         <div className="education-list"><div className="education"><span className="year">2022 — 2026</span><div><h3>Bachelor of Engineering</h3><p>Information Technology</p><span className="school">Centria University of Applied Sciences · Finland</span><p className="thesis">Thesis: <a href="https://urn.fi/URN:NBN:fi:amk-2026060220628" target="_blank" rel="noreferrer">Scalable cloud-based MERN e-commerce application ↗</a></p></div><span className="badge">Graduated</span></div><div className="education"><span className="year">2017 — 2021</span><div><h3>Bachelor of Business Administration</h3><span className="school">Centria University of Applied Sciences · Finland</span><p className="thesis">Thesis: <a href="https://urn.fi/URN:NBN:fi:amk-2021052510913" target="_blank" rel="noreferrer">Application of digital media as a marketing tool among Nepalese start-ups: Case Company: Kritya Hub ↗</a></p></div></div></div>
       </section>
 
       <section className="section wrap section-grid" id="experience">
-        <div><p className="section-label">05 — EXPERIENCE</p><h2 className="section-title">People and<br />operations.</h2></div>
+        <div><p className="section-label">EXPERIENCE</p><h2 className="section-title">People and<br />operations.</h2></div>
         <div className="education"><span className="year">2018 — NOW</span><div><h3>Shift Leader</h3><p>Ab Korv-Görans Kebab Oy · Jakobstad, Finland</p><span className="school">Coordinate daily operations, quality and food-safety routines, and team efficiency in a fast-paced environment.</span></div></div>
       </section>
 
-      <section className="contact" id="contact"><div className="wrap contact-inner"><p className="section-label">06 — CONTACT</p><h2>Let’s make<br /><span>something work.</span></h2><p className="contact-copy">I’m exploring junior software developer, backend developer, and trainee roles in Finland. I’d be happy to connect and talk about how I could contribute to your team.</p><div className="contact-links"><a className="button" href="mailto:uddavdhakal190@gmail.com">Email me ↗</a><a href={socials.linkedin} target="_blank" rel="noreferrer">LinkedIn ↗</a><a href={socials.github} target="_blank" rel="noreferrer">GitHub ↗</a></div><p className="contact-copy language-note">Based in Jakobstad, Finland · English (proficient) · Finnish (A2)</p></div></section>
+      <section className="contact" id="contact"><div className="wrap contact-inner"><p className="section-label">CONTACT</p><h2>Let’s make<br /><span>something work.</span></h2><p className="contact-copy">I’m exploring junior software developer, backend developer, and trainee roles in Finland. I’d be happy to connect and talk about how I could contribute to your team.</p><div className="contact-links"><a className="button" href="mailto:uddavdhakal190@gmail.com">Email me ↗</a><a href={socials.linkedin} target="_blank" rel="noreferrer">LinkedIn ↗</a><a href={socials.github} target="_blank" rel="noreferrer">GitHub ↗</a></div><p className="contact-copy language-note">Based in Jakobstad, Finland · English (proficient) · Finnish (A2)</p></div></section>
     </main>
   </>
 }
