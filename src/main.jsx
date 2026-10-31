@@ -21,7 +21,7 @@ const socials = { github: 'https://github.com/ud4uddav', linkedin: 'https://link
 function App() {
   return <>
     <header className="top wrap">
-      <nav aria-label="Main navigation"><a href="#about">About</a><a href="#projects">Projects</a><a href="#experience">Experience</a></nav>
+      <nav aria-label="Main navigation"><a href="#about">About</a><a href="#projects">Projects</a><a href="#education">Education</a><a href="#experience">Experience</a></nav>
       <a className="nav-contact" href="#contact">Let’s talk <span aria-hidden="true">↗</span></a>
     </header>
     <main>
