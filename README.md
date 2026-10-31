@@ -12,4 +12,4 @@ Install Node.js 20.19+ or 22.12+, then run `npm install` and `npm run dev`. Use 
 
 ## Deploy to GitHub Pages
 
-The workflow builds the app and publishes `dist` on each push to `main`. GitHub Pages is available at `https://ud4uddav.github.io/`.
+GitHub Pages must use **GitHub Actions** as its source. The workflow builds the app and publishes `dist` on each push to `main`. The site is available at `https://ud4uddav.github.io/`.
